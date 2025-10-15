@@ -1,0 +1,49 @@
+{
+  "id": "sample_2",
+  "name": "Ensalada César",
+  "servings": 2,
+  "category": "Ensaladas",
+  "notes": "Clásica ensalada César con pollo a la plancha",
+  "ingredients": [
+    {
+      "name": "Lechuga romana",
+      "quantity": 1,
+      "unit": "cabeza"
+    },
+    {
+      "name": "Pollo a la plancha",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Parmesano rallado",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "name": "Crutones",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Salsa César",
+      "quantity": 3,
+      "unit": "cucharadas"
+    },
+    {
+      "name": "Aceite de oliva",
+      "quantity": 2,
+      "unit": "cucharadas"
+    },
+    {
+      "name": "Limón",
+      "quantity": 1,
+      "unit": "unidad"
+    }
+  ],
+  "shared_by": "Comunidad MealPrep",
+  "shared_at": "2025-10-15T13:04:08.462834",
+  "version": "1.0",
+  "moderation_status": "approved",
+  "quality_score": 90
+}

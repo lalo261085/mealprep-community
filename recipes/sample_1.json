@@ -1,0 +1,49 @@
+{
+  "id": "sample_1",
+  "name": "Paella Valenciana",
+  "servings": 4,
+  "category": "Arroces",
+  "notes": "Receta tradicional valenciana con arroz bomba",
+  "ingredients": [
+    {
+      "name": "Arroz bomba",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "name": "Pollo",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "name": "Conejo",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "name": "Judías verdes",
+      "quantity": 150,
+      "unit": "g"
+    },
+    {
+      "name": "Azafrán",
+      "quantity": 1,
+      "unit": "pizca"
+    },
+    {
+      "name": "Aceite de oliva",
+      "quantity": 4,
+      "unit": "cucharadas"
+    },
+    {
+      "name": "Sal",
+      "quantity": 1,
+      "unit": "cucharadita"
+    }
+  ],
+  "shared_by": "Comunidad MealPrep",
+  "shared_at": "2025-10-15T13:04:08.462828",
+  "version": "1.0",
+  "moderation_status": "approved",
+  "quality_score": 95
+}
