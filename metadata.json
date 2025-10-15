@@ -1,0 +1,19 @@
+{
+  "last_sync": "2025-10-15T13:04:08.463309",
+  "total_recipes": 3,
+  "categories": [
+    "Arroces",
+    "Ensaladas"
+  ],
+  "contributors": [
+    "Comunidad MealPrep"
+  ],
+  "moderation_status": "ready",
+  "last_moderation": "2025-10-15T13:04:08.463315",
+  "repository_info": {
+    "name": "mealprep-community",
+    "description": "Recetas compartidas por la comunidad MealPrep",
+    "version": "1.0.0",
+    "created_at": "2025-10-15T13:04:08.463316"
+  }
+}
