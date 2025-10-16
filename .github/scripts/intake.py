@@ -95,12 +95,17 @@ def main():
         return
     labels = set(issue['labels'])
     payload = issue['payload'] or {}
+    # Prevent self-vote: if the issue contains an author and contact matching the actor, skip vote
+    actor = (json.loads(os.environ.get('GH_EVENT') or '{}').get('sender') or {}).get('login','')
     if ('recipe' in labels) or issue['title'].startswith('share:'):
         handle_share(payload)
         msg = 'Gracias por compartir! La receta fue agregada/actualizada.'
     elif ('vote' in labels) or issue['title'].startswith('vote:'):
-        handle_vote(payload)
-        msg = 'Gracias por votar! Se incrementó el contador.'
+        if (payload.get('author') or '').strip().lower() == actor.strip().lower():
+            msg = 'Voto ignorado: no se permite votar tu propia receta.'
+        else:
+            handle_vote(payload)
+            msg = 'Gracias por votar! Se incrementó el contador.'
     else:
         msg = 'No action for this issue.'
     # Commit y push
