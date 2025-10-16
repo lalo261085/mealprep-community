@@ -1,0 +1,28 @@
+{
+  "ingredients": [
+    {
+      "name": "Curry",
+      "unit": "g",
+      "quantity": 10.0,
+      "category": "Especias",
+      "notes": ""
+    },
+    {
+      "name": "Garbanzos",
+      "unit": "g",
+      "quantity": 200.0,
+      "category": "Legumbres",
+      "notes": ""
+    },
+    {
+      "name": "Leche de coco",
+      "unit": "ml",
+      "quantity": 200.0,
+      "category": "Lácteos",
+      "notes": ""
+    }
+  ],
+  "notes": "Con arroz",
+  "servings": 2,
+  "category": "Vegano"
+}

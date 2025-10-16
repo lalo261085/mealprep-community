@@ -15,6 +15,14 @@
       "likes": 0,
       "category": "Ensaladas",
       "path": "recipes/ensalada-de-pollo.json"
+    },
+    {
+      "id": "curry-de-garbanzos",
+      "name": "Curry de garbanzos",
+      "author": "Pablo",
+      "likes": 0,
+      "category": "Vegano",
+      "path": "recipes/curry-de-garbanzos.json"
     }
   ]
 }
