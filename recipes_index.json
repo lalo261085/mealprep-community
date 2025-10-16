@@ -1,12 +1,3 @@
 {
-  "recipes": [
-    {
-      "id": "arroz-con-verduras",
-      "name": "Arroz con verduras",
-      "author": "Pablo",
-      "likes": 0,
-      "category": "Arroces",
-      "path": "recipes/arroz-con-verduras.json"
-    }
-  ]
+  "recipes": []
 }
