@@ -1,0 +1,28 @@
+{
+  "ingredients": [
+    {
+      "name": "Lechuga",
+      "unit": "unidad",
+      "quantity": 1.0,
+      "category": "Verduras",
+      "notes": ""
+    },
+    {
+      "name": "Pollo cocido",
+      "unit": "g",
+      "quantity": 200.0,
+      "category": "Proteínas",
+      "notes": ""
+    },
+    {
+      "name": "Tomate",
+      "unit": "unidad",
+      "quantity": 1.0,
+      "category": "Verduras",
+      "notes": ""
+    }
+  ],
+  "notes": "Ligera y rápida",
+  "servings": 2,
+  "category": "Ensaladas"
+}

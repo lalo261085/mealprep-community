@@ -7,6 +7,14 @@
       "likes": 0,
       "category": "Postres",
       "path": "recipes/bud-n-de-banana.json"
+    },
+    {
+      "id": "ensalada-de-pollo",
+      "name": "Ensalada de pollo",
+      "author": "Pablo",
+      "likes": 0,
+      "category": "Ensaladas",
+      "path": "recipes/ensalada-de-pollo.json"
     }
   ]
 }
