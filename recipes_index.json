@@ -23,6 +23,14 @@
       "likes": 1,
       "category": "Vegano",
       "path": "recipes/curry-de-garbanzos.json"
+    },
+    {
+      "id": "hamburguesas",
+      "name": "Hamburguesas",
+      "author": "Pablo",
+      "likes": 0,
+      "category": "Rápidas",
+      "path": "recipes/hamburguesas.json"
     }
   ]
 }

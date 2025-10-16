@@ -1,0 +1,21 @@
+{
+  "ingredients": [
+    {
+      "name": "Carne molida",
+      "unit": "g",
+      "quantity": 300.0,
+      "category": "Proteínas",
+      "notes": ""
+    },
+    {
+      "name": "Pan de hamburguesa",
+      "unit": "unidad",
+      "quantity": 2.0,
+      "category": "Panificados",
+      "notes": ""
+    }
+  ],
+  "notes": "Caseras",
+  "servings": 2,
+  "category": "Rápidas"
+}
