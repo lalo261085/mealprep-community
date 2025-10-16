@@ -1,0 +1,28 @@
+{
+  "ingredients": [
+    {
+      "name": "Banana",
+      "unit": "unidad",
+      "quantity": 3.0,
+      "category": "Frutas",
+      "notes": ""
+    },
+    {
+      "name": "Harina",
+      "unit": "g",
+      "quantity": 200.0,
+      "category": "Panificados",
+      "notes": ""
+    },
+    {
+      "name": "Huevo",
+      "unit": "unidad",
+      "quantity": 2.0,
+      "category": "Huevos",
+      "notes": ""
+    }
+  ],
+  "notes": "Húmedo",
+  "servings": 6,
+  "category": "Postres"
+}
