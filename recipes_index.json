@@ -28,7 +28,7 @@
       "id": "hamburguesas",
       "name": "Hamburguesas",
       "author": "Pablo",
-      "likes": 2,
+      "likes": 3,
       "category": "Rápidas",
       "path": "recipes/hamburguesas.json"
     },
