@@ -1,0 +1,28 @@
+{
+  "ingredients": [
+    {
+      "name": "Carne",
+      "unit": "g",
+      "quantity": 200.0,
+      "category": "Proteínas",
+      "notes": ""
+    },
+    {
+      "name": "Salsa",
+      "unit": "ml",
+      "quantity": 50.0,
+      "category": "Salsas",
+      "notes": ""
+    },
+    {
+      "name": "Tortillas",
+      "unit": "unidad",
+      "quantity": 6.0,
+      "category": "Cereales",
+      "notes": ""
+    }
+  ],
+  "notes": "Con salsa",
+  "servings": 2,
+  "category": "Mexicana"
+}

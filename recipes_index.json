@@ -31,6 +31,14 @@
       "likes": 4,
       "category": "Rápidas",
       "path": "recipes/hamburguesas.json"
+    },
+    {
+      "id": "tacos-de-carne",
+      "name": "Tacos de carne",
+      "author": "Pablo",
+      "likes": 0,
+      "category": "Mexicana",
+      "path": "recipes/tacos-de-carne.json"
     }
   ]
 }
