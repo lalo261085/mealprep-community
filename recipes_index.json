@@ -36,7 +36,7 @@
       "id": "omelette",
       "name": "Omelette",
       "author": "Pablo",
-      "likes": 2,
+      "likes": 3,
       "category": "Huevos",
       "path": "recipes/omelette.json"
     }
