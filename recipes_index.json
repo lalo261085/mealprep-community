@@ -31,6 +31,14 @@
       "likes": 1,
       "category": "Rápidas",
       "path": "recipes/hamburguesas.json"
+    },
+    {
+      "id": "omelette",
+      "name": "Omelette",
+      "author": "Pablo",
+      "likes": 0,
+      "category": "Huevos",
+      "path": "recipes/omelette.json"
     }
   ]
 }
