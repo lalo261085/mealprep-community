@@ -12,7 +12,7 @@
       "id": "ensalada-de-pollo",
       "name": "Ensalada de pollo",
       "author": "Pablo",
-      "likes": 2,
+      "likes": 3,
       "category": "Ensaladas",
       "path": "recipes/ensalada-de-pollo.json"
     },
