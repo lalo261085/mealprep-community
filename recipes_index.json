@@ -44,7 +44,7 @@
       "id": "tofu-oriental",
       "name": "Tofu Oriental",
       "author": "Pablo",
-      "likes": 0,
+      "likes": 1,
       "category": "General",
       "path": "recipes/tofu-oriental.json"
     }
