@@ -1,0 +1,49 @@
+{
+  "ingredients": [
+    {
+      "name": "Almidon de maiz",
+      "unit": "ml",
+      "quantity": 30.0,
+      "category": "Almacén",
+      "notes": "0.0"
+    },
+    {
+      "name": "Azucar",
+      "unit": "ml",
+      "quantity": 8.0,
+      "category": "Aceites/Condimentos",
+      "notes": "0.0"
+    },
+    {
+      "name": "Huevo",
+      "unit": "unidad",
+      "quantity": 1.0,
+      "category": "Almacén",
+      "notes": "0.0"
+    },
+    {
+      "name": "Salsa de ostras",
+      "unit": "ml",
+      "quantity": 15.0,
+      "category": "Aceites/Condimentos",
+      "notes": "0.0"
+    },
+    {
+      "name": "Salsa de soja",
+      "unit": "ml",
+      "quantity": 30.0,
+      "category": "Aceites/Condimentos",
+      "notes": "0.0"
+    },
+    {
+      "name": "Tofu firme",
+      "unit": "unidad",
+      "quantity": 1.0,
+      "category": "Almacén",
+      "notes": "0.0"
+    }
+  ],
+  "notes": "0.0",
+  "servings": 1,
+  "category": "General"
+}

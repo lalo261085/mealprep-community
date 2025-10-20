@@ -39,6 +39,14 @@
       "likes": 1,
       "category": "Mexicana",
       "path": "recipes/tacos-de-carne.json"
+    },
+    {
+      "id": "tofu-oriental",
+      "name": "Tofu Oriental",
+      "author": "Pablo",
+      "likes": 0,
+      "category": "General",
+      "path": "recipes/tofu-oriental.json"
     }
   ]
 }
