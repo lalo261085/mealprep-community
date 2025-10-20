@@ -36,7 +36,7 @@
       "id": "tacos-de-carne",
       "name": "Tacos de carne",
       "author": "Pablo",
-      "likes": 2,
+      "likes": 3,
       "category": "Mexicana",
       "path": "recipes/tacos-de-carne.json"
     },
