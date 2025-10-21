@@ -47,6 +47,14 @@
       "likes": 2,
       "category": "General",
       "path": "recipes/tofu-oriental.json"
+    },
+    {
+      "id": "wok-de-verduras",
+      "name": "Wok de verduras",
+      "author": "Pablo",
+      "likes": 0,
+      "category": "Salteados",
+      "path": "recipes/wok-de-verduras.json"
     }
   ]
 }

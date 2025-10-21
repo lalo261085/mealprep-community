@@ -1,0 +1,28 @@
+{
+  "ingredients": [
+    {
+      "name": "Brócoli",
+      "unit": "g",
+      "quantity": 150.0,
+      "category": "Verduras",
+      "notes": ""
+    },
+    {
+      "name": "Salsa de soja",
+      "unit": "ml",
+      "quantity": 20.0,
+      "category": "Salsas",
+      "notes": ""
+    },
+    {
+      "name": "Zanahoria",
+      "unit": "unidad",
+      "quantity": 1.0,
+      "category": "Verduras",
+      "notes": ""
+    }
+  ],
+  "notes": "Rápido",
+  "servings": 2,
+  "category": "Salteados"
+}
