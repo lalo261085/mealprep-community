@@ -63,6 +63,14 @@
       "likes": 1,
       "category": "Pescados",
       "path": "recipes/pescado-a-la-plancha.json"
+    },
+    {
+      "id": "sopa-de-verduras",
+      "name": "Sopa de verduras",
+      "author": "p",
+      "likes": 0,
+      "category": "Sopas",
+      "path": "recipes/sopa-de-verduras.json"
     }
   ]
 }

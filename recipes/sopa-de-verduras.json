@@ -1,0 +1,28 @@
+{
+  "ingredients": [
+    {
+      "name": "Caldo",
+      "unit": "ml",
+      "quantity": 500.0,
+      "category": "Caldo",
+      "notes": ""
+    },
+    {
+      "name": "Papa",
+      "unit": "unidad",
+      "quantity": 1.0,
+      "category": "Verduras",
+      "notes": ""
+    },
+    {
+      "name": "Zanahoria",
+      "unit": "unidad",
+      "quantity": 1.0,
+      "category": "Verduras",
+      "notes": ""
+    }
+  ],
+  "notes": "De estación",
+  "servings": 2,
+  "category": "Sopas"
+}
