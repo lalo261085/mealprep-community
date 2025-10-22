@@ -55,6 +55,14 @@
       "likes": 4,
       "category": "Salteados",
       "path": "recipes/wok-de-verduras.json"
+    },
+    {
+      "id": "pescado-a-la-plancha",
+      "name": "Pescado a la plancha",
+      "author": "Pablo",
+      "likes": 0,
+      "category": "Pescados",
+      "path": "recipes/pescado-a-la-plancha.json"
     }
   ]
 }

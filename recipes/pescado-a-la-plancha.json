@@ -1,0 +1,21 @@
+{
+  "ingredients": [
+    {
+      "name": "Filete de pescado",
+      "unit": "g",
+      "quantity": 300.0,
+      "category": "Proteínas",
+      "notes": ""
+    },
+    {
+      "name": "Limón",
+      "unit": "unidad",
+      "quantity": 1.0,
+      "category": "Frutas",
+      "notes": ""
+    }
+  ],
+  "notes": "Con limón",
+  "servings": 2,
+  "category": "Pescados"
+}
