@@ -1,0 +1,21 @@
+name: Votar receta
+description: Incrementa el contador de likes de una receta de la comunidad
+title: "Vote: <id-de-receta>"
+labels:
+  - vote
+body:
+  - type: input
+    id: recipe_id
+    attributes:
+      label: ID de la receta
+      description: Coincide con el campo `id` en recipes_index.json
+      placeholder: ejemplo: tacos-de-carne
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmación
+      options:
+        - label: Confirmo que quiero votar esta receta
+          required: true

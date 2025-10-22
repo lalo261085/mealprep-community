@@ -1,27 +1,84 @@
-name: Community intake
+name: Community recipes workflows
 
 on:
   issues:
-    types: [opened]
-
-permissions:
-  contents: write
-  issues: write
+    types: [opened, edited]
 
 jobs:
-  handle-issue:
+  handle-vote:
+    if: contains(github.event.issue.labels.*.name, 'vote')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Run intake
-        env:
-          GH_EVENT: ${{ toJson(github.event) }}
+      - name: Extract recipe id from issue
+        id: extract
         run: |
-          python .github/scripts/intake.py
+          set -euo pipefail
+          TITLE="${{ github.event.issue.title }}"
+          BODY=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH")
+          # Prefer template field if present in body, else parse from title
+          RECIPE_ID=$(echo "$BODY" | sed -n 's/.*ID de la receta\s*\n\n\([^\n]*\).*/\1/p' | tr -d '\r' | xargs || true)
+          if [ -z "$RECIPE_ID" ]; then
+            if [[ "$TITLE" =~ ^Vote:\ (.+)$ ]]; then
+              RECIPE_ID="${BASH_REMATCH[1]}"
+            fi
+          fi
+          if [ -z "$RECIPE_ID" ]; then
+            echo "No se pudo extraer el ID de la receta" >&2
+            exit 1
+          fi
+          echo "recipe_id=$RECIPE_ID" >> $GITHUB_OUTPUT
+
+      - name: Bump likes in recipes_index.json
+        id: bump
+        run: |
+          set -euo pipefail
+          RECIPE_ID="${{ steps.extract.outputs.recipe_id }}"
+          FILE=recipes_index.json
+
+          if ! jq -e '.' "$FILE" > /dev/null; then
+            echo "Archivo JSON inválido: $FILE" >&2
+            exit 1
+          fi
+
+          idx=$(jq -r --arg id "$RECIPE_ID" '.recipes | map(.id == $id) | index(true)' "$FILE")
+          if [ "$idx" = "null" ]; then
+            echo "No existe receta con id=$RECIPE_ID" >&2
+            exit 1
+          fi
+
+          tmp=$(mktemp)
+          jq --argjson i "$idx" '.recipes[$i].likes = (.recipes[$i].likes + 1)' "$FILE" > "$tmp"
+          mv "$tmp" "$FILE"
+
+          echo "id=$RECIPE_ID" >> $GITHUB_OUTPUT
+
+      - name: Commit changes
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add recipes_index.json
+          git commit -m "chore(vote): +1 like a ${{ steps.bump.outputs.id }}"
+          git push
+
+      - name: Comment success
+        if: success()
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            👍 ¡Voto registrado! Se incrementó el like de `${{ steps.bump.outputs.id }}`.
+
+      - name: Comment failure
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ❌ No se pudo procesar el voto. Revisa que el ID exista en `recipes_index.json` y que el issue tenga la etiqueta `vote`.
