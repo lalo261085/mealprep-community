@@ -60,7 +60,7 @@
       "id": "pescado-a-la-plancha",
       "name": "Pescado a la plancha",
       "author": "Pablo",
-      "likes": 0,
+      "likes": 1,
       "category": "Pescados",
       "path": "recipes/pescado-a-la-plancha.json"
     }
