@@ -68,7 +68,7 @@
       "id": "sopa-de-verduras",
       "name": "Sopa de verduras",
       "author": "p",
-      "likes": 0,
+      "likes": 1,
       "category": "Sopas",
       "path": "recipes/sopa-de-verduras.json"
     }
