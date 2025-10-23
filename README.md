@@ -1,41 +1,33 @@
-# MealPrep Community Recipes
+# Recetario con Sistema de Votación (MealPrep Community)
 
-Este repositorio contiene las recetas compartidas por la comunidad de MealPrep.
+Este repositorio ahora incluye un **sistema de votación centralizado** inspirado en `MealPrep_v2.0_mac`.
 
-## Cómo compartir una receta desde la app
-- En la pestaña "Recetas", selecciona una receta y haz clic en "Compartir en comunidad".
-- Se abrirá un issue en GitHub con la receta en formato JSON dentro de un bloque de código.
-- Revisa el contenido y envía el issue.
+## ¿Qué se agregó?
+- `.github/scripts/vote_tracker.py`: lógica de tracking de votos por `build_id` (evita duplicados).
+- `.github/scripts/intake.py`: procesa issues para compartir recetas (`share:`) y votar (`vote:`).
+- `.github/scripts/vote_stats.py`: genera estadísticas de votos.
+- `.github/scripts/migrate_vote_data.py`: inicializa y migra datos si fuera necesario.
+- `.github/workflows/community.yml`: workflow que procesa issues abiertos.
+- `.github/workflows/vote-stats.yml`: reporte semanal de estadísticas.
+- `.github/VOTE_SYSTEM.md`: documentación del sistema.
+- `.github/data/vote_config.json`: configuración del sistema de votos.
 
-Un workflow (acciones de GitHub) tomará ese issue, validará el JSON y agregará/actualizará la receta en `recipes/` y la entrada en `recipes_index.json`.
+## Cómo probar localmente
+```bash
+python3 .github/scripts/test_vote_system.py
+python3 .github/scripts/vote_stats.py stats
+```
 
-## Cómo votar una receta
-- En la pestaña "Comunidad", selecciona la receta y pulsa "Votar".
-- Se abrirá un issue de tipo voto. El workflow incrementará el contador de `likes`.
+## Cómo usar con GitHub Issues
+- Abrí un issue con label `vote` y en el cuerpo pegá un bloque JSON con la receta y tu `build_id`:
 
-## Estructura del repo
-- `recipes/` — Contiene archivos JSON con recetas detalladas (ingredientes, notas, etc.).
-- `recipes_index.json` — Índice resumido de recetas (para listados rápidos en la app).
-- `.github/workflows/community.yml` — Automatización para procesar issues de compartir/votar.
-
-## Formato de archivos
-Ejemplo de entrada del índice (`recipes_index.json`):
 ```json
 {
-  "recipes": [
-    {"id": "tortilla", "name": "Tortilla", "author": "Ana", "likes": 0, "category": "Cena", "path": "recipes/tortilla.json"}
-  ]
+  "id": "bud-n-de-banana",
+  "build_id": "your-build-id-123"
 }
 ```
 
-Ejemplo de receta en `recipes/tortilla.json`:
-```json
-{
-  "ingredients": [
-    {"name": "Huevo", "unit": "ud", "quantity": 3, "category": "Huevos", "notes": ""}
-  ],
-  "notes": "Clásica",
-  "servings": 4,
-  "category": "Cena"
-}
-```
+- Para compartir receta, usá label `recipe` o título `share:` con bloque JSON del contenido.
+
+El workflow `Community intake` procesará el issue, actualizará `recipes_index.json`, recetas y `.github/data/vote_tracker.json`, y hará commit/push automático.

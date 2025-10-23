@@ -20,6 +20,14 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Initialize vote tracking system
+        run: |
+          python .github/scripts/migrate_vote_data.py
+
       - name: Run intake
         env:
           GH_EVENT: ${{ toJson(github.event) }}

@@ -1,0 +1,10 @@
+{
+  "build-with-special-chars!@#$%": {
+    "first_vote_at": "2025-10-23T03:58:40.033452+00:00",
+    "voted_recipes": [
+      "recipe-with-special-chars!@#$%"
+    ],
+    "total_votes": 1,
+    "last_vote_at": "2025-10-23T03:58:40.033463+00:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "description": "MealPrep Community Vote Tracking Configuration",
+  "settings": {
+    "cleanup_days_threshold": 90,
+    "max_votes_per_build_id": 1000,
+    "enable_duplicate_detection": true,
+    "enable_statistics": true,
+    "enable_weekly_reports": true
+  },
+  "metadata": {
+    "created_at": "2024-01-15T00:00:00Z",
+    "last_updated": "2024-01-15T00:00:00Z",
+    "maintainer": "MealPrep Community Team"
+  }
+}
