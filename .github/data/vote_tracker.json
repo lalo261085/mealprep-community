@@ -19,5 +19,13 @@
     ],
     "total_votes": 1,
     "last_vote_at": "2025-10-24T03:22:31.271009+00:00"
+  },
+  "agent-test-20251026-1": {
+    "first_vote_at": "2025-10-26T22:53:25.306105+00:00",
+    "voted_recipes": [
+      "bud-n-de-banana"
+    ],
+    "total_votes": 1,
+    "last_vote_at": "2025-10-26T22:53:25.306118+00:00"
   }
 }
