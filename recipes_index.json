@@ -22,9 +22,11 @@
       "id": "curry-de-garbanzos",
       "name": "Curry de garbanzos",
       "author": "Pablo",
-      "likes": 4,
+      "likes": 5,
       "category": "Vegano",
-      "path": "recipes/curry-de-garbanzos.json"
+      "path": "recipes/curry-de-garbanzos.json",
+      "updated_at": "2025-10-27T16:19:26.726809+00:00",
+      "last_vote_at": "2025-10-27T16:19:26.726809+00:00"
     },
     {
       "id": "hamburguesas",
