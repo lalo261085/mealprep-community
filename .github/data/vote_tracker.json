@@ -56,9 +56,10 @@
   "f3e331d97a989c3e": {
     "first_vote_at": "2025-10-27T16:19:26.726568+00:00",
     "voted_recipes": [
+      "sopa-de-verduras",
       "curry-de-garbanzos"
     ],
-    "total_votes": 1,
-    "last_vote_at": "2025-10-27T16:19:26.726580+00:00"
+    "total_votes": 2,
+    "last_vote_at": "2025-10-27T19:30:22.299628+00:00"
   }
 }
