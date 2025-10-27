@@ -27,5 +27,13 @@
     ],
     "total_votes": 1,
     "last_vote_at": "2025-10-26T22:53:25.306118+00:00"
+  },
+  "1b7a4d9fbd1a5a04": {
+    "first_vote_at": "2025-10-27T14:02:41.620323+00:00",
+    "voted_recipes": [
+      "sopa-de-verduras"
+    ],
+    "total_votes": 1,
+    "last_vote_at": "2025-10-27T14:02:41.620334+00:00"
   }
 }

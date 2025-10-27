@@ -70,9 +70,11 @@
       "id": "sopa-de-verduras",
       "name": "Sopa de verduras",
       "author": "p",
-      "likes": 1,
+      "likes": 2,
       "category": "Sopas",
-      "path": "recipes/sopa-de-verduras.json"
+      "path": "recipes/sopa-de-verduras.json",
+      "updated_at": "2025-10-27T14:02:41.620560+00:00",
+      "last_vote_at": "2025-10-27T14:02:41.620560+00:00"
     }
   ]
 }
