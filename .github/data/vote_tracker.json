@@ -44,5 +44,13 @@
     ],
     "total_votes": 2,
     "last_vote_at": "2025-10-27T15:04:47.402982+00:00"
+  },
+  "1e41972ec2ff654a": {
+    "first_vote_at": "2025-10-27T15:09:49.120082+00:00",
+    "voted_recipes": [
+      "pescado-a-la-plancha"
+    ],
+    "total_votes": 1,
+    "last_vote_at": "2025-10-27T15:09:49.120096+00:00"
   }
 }
