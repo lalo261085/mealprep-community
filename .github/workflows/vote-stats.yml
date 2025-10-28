@@ -36,7 +36,8 @@ jobs:
       - name: Ensure 'statistics' label exists
         run: |
           if command -v gh &> /dev/null; then
-            gh label view statistics >/dev/null 2>&1 || gh label create statistics --color ededed --description "Weekly vote statistics reports"
+            # Create or update the label idempotently
+            gh label create statistics --color ededed --description "Weekly vote statistics reports" --force
           fi
 
       - name: Create statistics issue
