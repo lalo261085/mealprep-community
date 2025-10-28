@@ -13,6 +13,8 @@ permissions:
 jobs:
   generate-stats:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,6 +32,12 @@ jobs:
         run: |
           python .github/scripts/vote_stats.py stats > vote_stats_report.txt
           echo "Vote statistics report generated"
+
+      - name: Ensure 'statistics' label exists
+        run: |
+          if command -v gh &> /dev/null; then
+            gh label view statistics >/dev/null 2>&1 || gh label create statistics --color ededed --description "Weekly vote statistics reports"
+          fi
 
       - name: Create statistics issue
         run: |
