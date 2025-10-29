@@ -64,11 +64,11 @@
       "id": "pescado-a-la-plancha",
       "name": "Pescado a la plancha",
       "author": "Pablo",
-      "likes": 3,
+      "likes": 4,
       "category": "Pescados",
       "path": "recipes/pescado-a-la-plancha.json",
-      "updated_at": "2025-10-27T15:09:49.120325+00:00",
-      "last_vote_at": "2025-10-27T15:09:49.120325+00:00"
+      "updated_at": "2025-10-29T02:30:25.430081+00:00",
+      "last_vote_at": "2025-10-29T02:30:25.430081+00:00"
     },
     {
       "id": "sopa-de-verduras",
