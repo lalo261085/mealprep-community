@@ -1,0 +1,21 @@
+{
+  "ingredients": [
+    {
+      "name": "Huevo",
+      "unit": "unidad",
+      "quantity": 2.0,
+      "category": "Huevos",
+      "notes": ""
+    },
+    {
+      "name": "Queso",
+      "unit": "g",
+      "quantity": 50.0,
+      "category": "Lácteos",
+      "notes": ""
+    }
+  ],
+  "notes": "Con queso",
+  "servings": 1,
+  "category": "Huevos"
+}
