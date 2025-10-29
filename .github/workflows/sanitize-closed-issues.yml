@@ -1,0 +1,49 @@
+name: Sanitize closed issues
+
+on:
+  issues:
+    types: [closed]
+
+permissions:
+  issues: write
+
+jobs:
+  sanitize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Redact and lock closed issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = context.payload.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Skip if this is a pull request (issues event can include PRs metadata)
+            if (context.payload.issue.pull_request) {
+              core.info('Skipping because this is a pull request.');
+              return;
+            }
+
+            // Replace title and body, clear labels
+            await github.rest.issues.update({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              title: `[eliminado] #${issueNumber}`,
+              body: 'Este issue fue redactado automáticamente al cerrarse.',
+              labels: [],
+              milestone: null
+            });
+
+            // Lock the conversation to prevent further comments
+            try {
+              await github.rest.issues.lock({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                lock_reason: 'resolved'
+              });
+            } catch (error) {
+              core.warning(`No se pudo bloquear el issue: ${error.message}`);
+            }
