@@ -56,11 +56,12 @@
   "f3e331d97a989c3e": {
     "first_vote_at": "2025-10-27T16:19:26.726568+00:00",
     "voted_recipes": [
-      "curry-de-garbanzos",
       "pescado-a-la-plancha",
-      "sopa-de-verduras"
+      "sopa-de-verduras",
+      "wok-de-verduras",
+      "curry-de-garbanzos"
     ],
-    "total_votes": 3,
-    "last_vote_at": "2025-10-29T02:30:25.429813+00:00"
+    "total_votes": 4,
+    "last_vote_at": "2025-10-29T03:13:45.807678+00:00"
   }
 }

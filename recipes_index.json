@@ -56,9 +56,11 @@
       "id": "wok-de-verduras",
       "name": "Wok de verduras",
       "author": "Pablo",
-      "likes": 4,
+      "likes": 5,
       "category": "Salteados",
-      "path": "recipes/wok-de-verduras.json"
+      "path": "recipes/wok-de-verduras.json",
+      "updated_at": "2025-10-29T03:13:45.807899+00:00",
+      "last_vote_at": "2025-10-29T03:13:45.807899+00:00"
     },
     {
       "id": "pescado-a-la-plancha",
