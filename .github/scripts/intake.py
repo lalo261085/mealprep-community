@@ -67,7 +67,11 @@ def upsert_index_entry(idx: dict, entry: dict) -> None:
     lst.append(entry)
 
 
-def handle_share(payload: dict) -> None:
+def handle_share(payload: dict) -> tuple[bool, str]:
+    """Create a new recipe entry. Reject if name/id already exist.
+
+    Returns (success, message).
+    """
     RECIPES_DIR.mkdir(parents=True, exist_ok=True)
     idx = load_index()
     now = datetime.now(timezone.utc).isoformat()
@@ -75,12 +79,13 @@ def handle_share(payload: dict) -> None:
     name = (payload.get('name') or '').strip() or 'Receta'
     rid = normalize_id(payload.get('id') or payload.get('name') or '')
     path = f"recipes/{rid}.json"
-    # Try to locate existing entry to preserve created_at
-    existing = None
+
+    # Duplicate prevention by id or name (case/space-insensitive)
+    normalized_name = name.lower().strip()
     for e in idx.get('recipes', []):
-        if e.get('id') == rid:
-            existing = e
-            break
+        if e.get('id') == rid or (e.get('name') or '').lower().strip() == normalized_name:
+            return False, f"Ya existe una receta con ese nombre (id: {e.get('id')}). No se puede duplicar."
+
     entry = {
         'id': rid,
         'name': name,
@@ -88,7 +93,7 @@ def handle_share(payload: dict) -> None:
         'likes': int(payload.get('likes') or 0),
         'category': (payload.get('category') or '').strip(),
         'path': path,
-        'created_at': (existing or {}).get('created_at') or now,
+        'created_at': now,
         'updated_at': now,
     }
     # Save recipe details
@@ -101,6 +106,7 @@ def handle_share(payload: dict) -> None:
     (ROOT / path).write_text(json.dumps(details, ensure_ascii=False, indent=2), encoding='utf-8')
     upsert_index_entry(idx, entry)
     save_index(idx)
+    return True, f"Gracias por compartir! La receta '{name}' fue agregada."
 
 
 def handle_vote(payload: dict) -> tuple[bool, str]:
@@ -159,9 +165,10 @@ def main():
             print(f"Cleaned up {cleaned} old vote records")
     
     if ('recipe' in labels) or issue['title'].startswith('share:'):
-        handle_share(payload)
-        msg = 'Gracias por compartir! La receta fue agregada/actualizada.'
-        commit_changes = True
+        success, msg = handle_share(payload)
+        commit_changes = success
+        if not success:
+            print(f"Share rejected: {msg}")
     elif ('vote' in labels) or issue['title'].startswith('vote:'):
         success, msg = handle_vote(payload)
         commit_changes = success

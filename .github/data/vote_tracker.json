@@ -1,65 +1,15 @@
 {
-  "build-with-special-chars!@#$%": {
-    "first_vote_at": "2025-10-23T03:58:40.033452+00:00",
-    "voted_recipes": [
-      "recipe-with-special-chars!@#$%"
-    ],
-    "total_votes": 1,
-    "last_vote_at": "2025-10-23T03:58:40.033463+00:00"
-  },
   "metadata": {
     "version": "1.0",
     "created_at": "2025-10-24T03:22:31.212659+00:00",
     "description": "MealPrep Community Vote Tracking System"
   },
-  "2eb078b9acca6f9f": {
-    "first_vote_at": "2025-10-24T03:22:31.270991+00:00",
+  "build-with-special-chars!@#$%": {
+    "first_vote_at": "2025-10-29T03:21:23.261618+00:00",
     "voted_recipes": [
-      "bud-n-de-banana"
+      "recipe-with-special-chars!@#$%"
     ],
     "total_votes": 1,
-    "last_vote_at": "2025-10-24T03:22:31.271009+00:00"
-  },
-  "agent-test-20251026-1": {
-    "first_vote_at": "2025-10-26T22:53:25.306105+00:00",
-    "voted_recipes": [
-      "bud-n-de-banana"
-    ],
-    "total_votes": 1,
-    "last_vote_at": "2025-10-26T22:53:25.306118+00:00"
-  },
-  "1b7a4d9fbd1a5a04": {
-    "first_vote_at": "2025-10-27T14:02:41.620323+00:00",
-    "voted_recipes": [
-      "sopa-de-verduras"
-    ],
-    "total_votes": 1,
-    "last_vote_at": "2025-10-27T14:02:41.620334+00:00"
-  },
-  "62394f99b925fb37": {
-    "first_vote_at": "2025-10-27T14:11:16.729578+00:00",
-    "voted_recipes": [
-      "pescado-a-la-plancha",
-      "sopa-de-verduras"
-    ],
-    "total_votes": 2,
-    "last_vote_at": "2025-10-27T15:04:47.402982+00:00"
-  },
-  "1e41972ec2ff654a": {
-    "first_vote_at": "2025-10-27T15:09:49.120082+00:00",
-    "voted_recipes": [
-      "pescado-a-la-plancha"
-    ],
-    "total_votes": 1,
-    "last_vote_at": "2025-10-27T15:09:49.120096+00:00"
-  },
-  "f3e331d97a989c3e": {
-    "first_vote_at": "2025-10-27T16:19:26.726568+00:00",
-    "voted_recipes": [
-      "sopa-de-verduras",
-      "curry-de-garbanzos"
-    ],
-    "total_votes": 2,
-    "last_vote_at": "2025-10-27T19:30:22.299628+00:00"
+    "last_vote_at": "2025-10-29T03:21:23.261623+00:00"
   }
 }
