@@ -1,0 +1,14 @@
+{
+  "ingredients": [
+    {
+      "name": "Papa",
+      "unit": "unidad",
+      "quantity": 2.0,
+      "category": "Verduras",
+      "notes": ""
+    }
+  ],
+  "notes": "Con papas",
+  "servings": 3,
+  "category": "Carnes"
+}
