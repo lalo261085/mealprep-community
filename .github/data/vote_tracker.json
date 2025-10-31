@@ -80,5 +80,13 @@
     ],
     "total_votes": 2,
     "last_vote_at": "2025-10-31T02:09:45.034796+00:00"
+  },
+  "ba764b0ebe7d0a56": {
+    "first_vote_at": "2025-10-31T03:41:26.302437+00:00",
+    "voted_recipes": [
+      "arroz-con-verduras"
+    ],
+    "total_votes": 1,
+    "last_vote_at": "2025-10-31T03:41:26.302453+00:00"
   }
 }
