@@ -75,9 +75,10 @@
   "eaacc7035916242b": {
     "first_vote_at": "2025-10-29T03:44:56.336490+00:00",
     "voted_recipes": [
-      "wok-de-verduras"
+      "wok-de-verduras",
+      "arroz-con-verduras"
     ],
-    "total_votes": 1,
-    "last_vote_at": "2025-10-29T03:44:56.336502+00:00"
+    "total_votes": 2,
+    "last_vote_at": "2025-10-31T02:09:45.034796+00:00"
   }
 }
