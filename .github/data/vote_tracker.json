@@ -84,11 +84,12 @@
   "ba764b0ebe7d0a56": {
     "first_vote_at": "2025-10-31T03:41:26.302437+00:00",
     "voted_recipes": [
-      "pollo-al-horno",
       "arroz-con-verduras",
-      "omelette"
+      "omelette",
+      "wok-de-verduras",
+      "pollo-al-horno"
     ],
-    "total_votes": 3,
-    "last_vote_at": "2025-10-31T03:47:20.463810+00:00"
+    "total_votes": 4,
+    "last_vote_at": "2025-10-31T03:49:52.865659+00:00"
   }
 }
