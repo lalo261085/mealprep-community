@@ -75,11 +75,12 @@
   "eaacc7035916242b": {
     "first_vote_at": "2025-10-29T03:44:56.336490+00:00",
     "voted_recipes": [
+      "arroz-con-verduras",
       "wok-de-verduras",
-      "arroz-con-verduras"
+      "omelette"
     ],
-    "total_votes": 2,
-    "last_vote_at": "2025-10-31T02:09:45.034796+00:00"
+    "total_votes": 3,
+    "last_vote_at": "2025-10-31T21:46:56.595040+00:00"
   },
   "ba764b0ebe7d0a56": {
     "first_vote_at": "2025-10-31T03:41:26.302437+00:00",
