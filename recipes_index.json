@@ -109,11 +109,12 @@
       "id": "pollo-al-horno",
       "name": "Pollo al horno",
       "author": "Pablo",
-      "likes": 0,
+      "likes": 1,
       "category": "Carnes",
       "path": "recipes/pollo-al-horno.json",
       "created_at": "2025-10-31T03:46:18.193868+00:00",
-      "updated_at": "2025-10-31T03:46:18.193868+00:00"
+      "updated_at": "2025-10-31T03:46:55.175761+00:00",
+      "last_vote_at": "2025-10-31T03:46:55.175761+00:00"
     }
   ]
 }
