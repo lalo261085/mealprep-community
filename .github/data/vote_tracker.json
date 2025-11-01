@@ -92,5 +92,13 @@
     ],
     "total_votes": 4,
     "last_vote_at": "2025-10-31T03:49:52.865659+00:00"
+  },
+  "44d52a00389a2a3a": {
+    "first_vote_at": "2025-11-01T02:33:34.181309+00:00",
+    "voted_recipes": [
+      "pollo-al-horno"
+    ],
+    "total_votes": 1,
+    "last_vote_at": "2025-11-01T02:33:34.181324+00:00"
   }
 }
