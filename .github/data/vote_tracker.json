@@ -96,9 +96,10 @@
   "44d52a00389a2a3a": {
     "first_vote_at": "2025-11-01T02:33:34.181309+00:00",
     "voted_recipes": [
+      "arroz-con-verduras",
       "pollo-al-horno"
     ],
-    "total_votes": 1,
-    "last_vote_at": "2025-11-01T02:33:34.181324+00:00"
+    "total_votes": 2,
+    "last_vote_at": "2025-11-01T02:53:40.596306+00:00"
   }
 }
